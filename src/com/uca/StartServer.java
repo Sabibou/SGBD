@@ -56,7 +56,6 @@ public class StartServer {
 
         // annule les modifications de la grille 
         post("/grid/cancel", (req, res) -> {
-                System.out.println(getSession(req));
                 CellCore.cancel(getSession(req));
                 return "";
             });
